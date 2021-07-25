@@ -1,5 +1,6 @@
 package MobileDevice;
 
+import java.util.Scanner;
 
 public class MobilePhone extends MobileDevice {
 		
@@ -33,8 +34,7 @@ public class MobilePhone extends MobileDevice {
 			return typeNetwork;
 		}
 	}
-
-
+	
 
 	@Override
 	public String toString() {
@@ -44,7 +44,7 @@ public class MobilePhone extends MobileDevice {
 				"\nSerial Number: " + serialNumber +
 				"\nCPU: " + cpu + 
 				"\nProvider: "  + provider +
-				"\nNetwork: " + network;
+				"\nNetwork: " + network + "\n";
 	}
 	
 	
