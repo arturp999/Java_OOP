@@ -17,7 +17,7 @@ public abstract class Shape {
 		this.length = iLength;
 	}
 	
-	public abstract float CalculateArea();
+	public abstract float CalculateObjectArea();
 
 		
 	public String getUniqueID() {

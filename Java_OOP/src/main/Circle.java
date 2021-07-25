@@ -25,7 +25,7 @@ public class Circle extends Shape{
 
 
 	@Override
-	public float CalculateArea() {
+	public float CalculateObjectArea() {
 		float area = 3.14f * (radius*radius);
 		return area;
 	}

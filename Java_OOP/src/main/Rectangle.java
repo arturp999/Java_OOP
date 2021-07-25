@@ -12,7 +12,7 @@ public class Rectangle extends Shape{
 
 
 	@Override
-	public float CalculateArea() {
+	public float CalculateObjectArea() {
 		float area = width * length;
 		return area;
 	}
