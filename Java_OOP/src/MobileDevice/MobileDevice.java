@@ -1,8 +1,6 @@
 package MobileDevice;
 
-import java.util.Scanner;
-
-public class MobileDevice {
+public class MobileDevice implements Comparable<MobileDevice> {
 	public String model;
 	public String brand;
 	public int year; 
@@ -67,8 +65,12 @@ public class MobileDevice {
 	public void setCpu(CPU cpu) {
 		this.cpu = cpu;
 	}
-	
 
+
+	@Override 	//https://dzone.com/articles/how-to-sort-objects-in-java
+	public int compareTo(MobileDevice compareDevices) {
+		 return  (this.getYear() < ((MobileDevice) compareDevices).getYear() ? -1 : (this.getYear() == ((MobileDevice) compareDevices).getYear() ? 0 : 1)); // fml
+	}
 
 
 }
